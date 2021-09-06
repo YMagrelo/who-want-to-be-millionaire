@@ -1,0 +1,329 @@
+{
+  "scoresList": ["500",
+    "1,000",
+    "2,000",
+    "4,000",
+    "8,000",
+    "16,000",
+    "32,000",
+    "64,000",
+    "125,000",
+    "250,000",
+    "500,000",
+    "1,000,000"
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": 0,
+      "question": "First question",
+      "answers": [
+        {
+          "number": "A",
+          "value": "trully",
+          "isCorrect": true
+        },
+        {
+          "number": "B",
+          "value": "falsy",
+          "isCorrect": false
+        },
+        {
+          "number": "C",
+          "value": "also falsy",
+          "isCorrect": false
+        },
+        {
+          "number": "D",
+          "value": "it is also falsy",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "question": "Second question",
+      "answers": [
+        {
+          "number": "A",
+          "value": "trully",
+          "isCorrect": true
+        },
+        {
+          "number": "B",
+          "value": "falsy",
+          "isCorrect": false
+        },
+        {
+          "number": "C",
+          "value": "also falsy",
+          "isCorrect": false
+        },
+        {
+          "number": "D",
+          "value": "it is also falsy",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "Third question",
+      "answers": [
+        {
+          "number": "A",
+          "value": "trully",
+          "isCorrect": true
+        },
+        {
+          "number": "B",
+          "value": "falsy",
+          "isCorrect": false
+        },
+        {
+          "number": "C",
+          "value": "also falsy",
+          "isCorrect": false
+        },
+        {
+          "number": "D",
+          "value": "it is also falsy",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "4 question",
+      "answers": [
+        {
+          "number": "A",
+          "value": "trully",
+          "isCorrect": true
+        },
+        {
+          "number": "B",
+          "value": "falsy",
+          "isCorrect": false
+        },
+        {
+          "number": "C",
+          "value": "also falsy",
+          "isCorrect": false
+        },
+        {
+          "number": "D",
+          "value": "it is also falsy",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "5 question",
+      "answers": [
+        {
+          "number": "A",
+          "value": "trully",
+          "isCorrect": true
+        },
+        {
+          "number": "B",
+          "value": "falsy",
+          "isCorrect": false
+        },
+        {
+          "number": "C",
+          "value": "also falsy",
+          "isCorrect": false
+        },
+        {
+          "number": "D",
+          "value": "it is also falsy",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "6 question",
+      "answers": [
+        {
+          "number": "A",
+          "value": "trully",
+          "isCorrect": true
+        },
+        {
+          "number": "B",
+          "value": "falsy",
+          "isCorrect": false
+        },
+        {
+          "number": "C",
+          "value": "also falsy",
+          "isCorrect": false
+        },
+        {
+          "number": "D",
+          "value": "it is also falsy",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "7 question",
+      "answers": [
+        {
+          "number": "A",
+          "value": "trully",
+          "isCorrect": true
+        },
+        {
+          "number": "B",
+          "value": "falsy",
+          "isCorrect": false
+        },
+        {
+          "number": "C",
+          "value": "also falsy",
+          "isCorrect": false
+        },
+        {
+          "number": "D",
+          "value": "it is also falsy",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "8 question",
+      "answers": [
+        {
+          "number": "A",
+          "value": "trully",
+          "isCorrect": true
+        },
+        {
+          "number": "B",
+          "value": "falsy",
+          "isCorrect": false
+        },
+        {
+          "number": "C",
+          "value": "also falsy",
+          "isCorrect": false
+        },
+        {
+          "number": "D",
+          "value": "it is also falsy",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "9 question",
+      "answers": [
+        {
+          "number": "A",
+          "value": "trully",
+          "isCorrect": true
+        },
+        {
+          "number": "B",
+          "value": "falsy",
+          "isCorrect": false
+        },
+        {
+          "number": "C",
+          "value": "also falsy",
+          "isCorrect": false
+        },
+        {
+          "number": "D",
+          "value": "it is also falsy",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "10 question",
+      "answers": [
+        {
+          "number": "A",
+          "value": "trully",
+          "isCorrect": true
+        },
+        {
+          "number": "B",
+          "value": "falsy",
+          "isCorrect": false
+        },
+        {
+          "number": "C",
+          "value": "also falsy",
+          "isCorrect": false
+        },
+        {
+          "number": "D",
+          "value": "it is also falsy",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "question": "11 question",
+      "answers": [
+        {
+          "number": "A",
+          "value": "trully",
+          "isCorrect": true
+        },
+        {
+          "number": "B",
+          "value": "falsy",
+          "isCorrect": false
+        },
+        {
+          "number": "C",
+          "value": "also falsy",
+          "isCorrect": false
+        },
+        {
+          "number": "D",
+          "value": "it is also falsy",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "question": "12 question",
+      "answers": [
+        {
+          "number": "A",
+          "value": "trully",
+          "isCorrect": true
+        },
+        {
+          "number": "B",
+          "value": "falsy",
+          "isCorrect": false
+        },
+        {
+          "number": "C",
+          "value": "also falsy",
+          "isCorrect": false
+        },
+        {
+          "number": "D",
+          "value": "it is also falsy",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

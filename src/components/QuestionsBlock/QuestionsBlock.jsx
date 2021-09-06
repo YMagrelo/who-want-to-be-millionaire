@@ -1,18 +1,19 @@
+/* eslint-disable jsx-a11y/interactive-supports-focus,jsx-a11y/click-events-have-key-events */
 import React from 'react';
 import './QuestionsBlock.scss';
 
-const QuestionsBlock = ({ data }) => {
+const QuestionsBlock = ({ question, answers, handleAnswerClick }) => {
   console.log('log');
   return (
     <div className="questionsBlock">
       <div className="questionsContainer">
-        <h2 className="questionsContainer_questionTitle">How old your elder brother was 10 years before you was born, mate?</h2>
+        <h2 className="questionsContainer_questionTitle">{question}</h2>
         <div className="questionsContainer_answersList">
-          {data.map((item) => (
-            <div className="answerItem" key={item.value}>
+          {answers.map(({ value, number, isCorrect }) => (
+            <div role="button" className="answerItem" key={value} onClick={() => handleAnswerClick(isCorrect)}>
               <div className="answerItem_value">
-                <span className="answerItem_valueNum">{item.number}</span>
-                {item.value}
+                <span className="answerItem_valueNum">{number}</span>
+                {value}
               </div>
               <div>
                 <svg className="answerItem_icon" viewBox="0 0 421 72" xmlns="http://www.w3.org/2000/svg">

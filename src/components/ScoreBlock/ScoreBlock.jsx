@@ -19,8 +19,6 @@ const ScoreBlock = ({ data, questionNumber }) => (
 
         const scoreItemStyle = classNames('scoreItem', scoreItemStatus);
 
-        console.log(`index${index}`, scoreItemStyle);
-
         return (
           <div className={scoreItemStyle} key={item}>
             <span className="scoreItem_value">{`$${item}`}</span>
