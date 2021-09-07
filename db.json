@@ -1,5 +1,6 @@
 {
-  "scoresList": ["500",
+  "scoresList": [
+    "500",
     "1,000",
     "2,000",
     "4,000",
@@ -15,6 +16,7 @@
   "questionsAndAnswers": [
     {
       "id": 0,
+      "winScore": "$0",
       "question": "First question",
       "answers": [
         {
@@ -41,6 +43,7 @@
     },
     {
       "id": 1,
+      "winScore": "$500",
       "question": "Second question",
       "answers": [
         {
@@ -67,6 +70,7 @@
     },
     {
       "id": 2,
+      "winScore": "$1,000",
       "question": "Third question",
       "answers": [
         {
@@ -93,6 +97,7 @@
     },
     {
       "id": 3,
+      "winScore": "$2,000",
       "question": "4 question",
       "answers": [
         {
@@ -119,6 +124,7 @@
     },
     {
       "id": 4,
+      "winScore": "$4,000",
       "question": "5 question",
       "answers": [
         {
@@ -145,6 +151,7 @@
     },
     {
       "id": 5,
+      "winScore": "$8,000",
       "question": "6 question",
       "answers": [
         {
@@ -172,6 +179,7 @@
     {
       "id": 6,
       "question": "7 question",
+      "winScore": "$16,000",
       "answers": [
         {
           "number": "A",
@@ -197,6 +205,7 @@
     },
     {
       "id": 7,
+      "winScore": "$32,000",
       "question": "8 question",
       "answers": [
         {
@@ -223,6 +232,7 @@
     },
     {
       "id": 8,
+      "winScore": "$64,000",
       "question": "9 question",
       "answers": [
         {
@@ -249,6 +259,7 @@
     },
     {
       "id": 9,
+      "winScore": "$125,000",
       "question": "10 question",
       "answers": [
         {
@@ -275,6 +286,7 @@
     },
     {
       "id": 10,
+      "winScore": "$250,000",
       "question": "11 question",
       "answers": [
         {
@@ -301,6 +313,7 @@
     },
     {
       "id": 11,
+      "winScore": "$500,000",
       "question": "12 question",
       "answers": [
         {

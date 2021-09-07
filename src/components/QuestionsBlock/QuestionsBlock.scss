@@ -80,18 +80,16 @@
    }
 }
 
+.answerItem.right {
+  svg {
+    fill: #E6FAEA;
+    stroke: #47D867;
+  }
+}
 
-.scoreBlock {
-  width: 25%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  background-color: #ffffff;
-
-  &_scoreList {
-    width: 100%;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
+.answerItem.wrong {
+  svg {
+    fill: #FDEEED;
+    stroke: #EC6259;
   }
 }

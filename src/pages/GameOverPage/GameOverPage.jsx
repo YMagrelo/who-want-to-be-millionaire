@@ -1,22 +1,29 @@
 import React from 'react';
-import './GameEndPage.scss';
+import './GameOverPage.scss';
 import IntroOutroContent from '../../components/IntroOutroContent';
 
-const GameEndPage = () => {
+const GameOverPage = ({
+  score, setQuestionNumber, setIsGameOver,
+}) => {
   const heading = 'Total score:';
-  const title = '$8,000 earned';
   const buttonText = 'Try again';
   const navigatePath = '/';
+  const handleTryAgainButton = () => {
+    setQuestionNumber(0);
+    setIsGameOver(false);
+  };
+
   return (
     <div className="endPageContainer">
       <IntroOutroContent
         heading={heading}
-        title={title}
+        title={score}
         buttonText={buttonText}
         navigatePath={navigatePath}
+        handleTryAgainButton={handleTryAgainButton}
       />
     </div>
   );
 };
 
-export default GameEndPage;
+export default GameOverPage;

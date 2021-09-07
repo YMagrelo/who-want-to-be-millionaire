@@ -1,0 +1,21 @@
+.winPageContainer {
+  height: 100vh;
+  display: flex;
+  padding: 0 10px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background: linear-gradient(to right bottom, #ffffff 50%, #FFF3EB 50%);
+
+  &_contentImage {
+    width: 100%;
+    display: block;
+    max-width: 300px;
+    margin-bottom: 30px;
+  }
+
+  &_title {
+    max-width: 450px;
+  }
+}

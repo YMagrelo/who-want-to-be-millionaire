@@ -1,10 +1,21 @@
 {
-  "extends": "airbnb",
   "env": {
     "node": true,
     "es6": true,
     "browser": true
   },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "airbnb",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:jsx-a11y/recommended"
+  ],
+  "plugins": [
+    "react",
+    "jsx-a11y"
+  ],
   "rules": {
     "no-console": "off",
     "react/jsx-indent": 1,
@@ -12,6 +23,7 @@
     "no-unused-vars": 1,
     "no-trailing-spaces": 1,
     "react/jsx-tag-spacing": 1,
-    "quotes": 1
+    "quotes": 1,
+    "consistent-return": 0
   }
 }

@@ -3,14 +3,14 @@ import './IntroOutroContent.scss';
 import { Link } from 'react-router-dom';
 
 const IntroOutroContent = ({
-  heading, title, buttonText, navigatePath,
+  heading, title, buttonText, navigatePath, handleTryAgainButton,
 }) => (
   <div className="container">
     <img src="/images/introImg.png" alt="greed" className="contentImage" />
     <div className="textBlock">
       <p className="textBlock_heading">{heading}</p>
       <h1 className="textBlock_title">{title}</h1>
-      <Link to={navigatePath}>
+      <Link to={navigatePath} onClick={handleTryAgainButton}>
         <button className="textBlock_button" type="button">{buttonText}</button>
       </Link>
     </div>
