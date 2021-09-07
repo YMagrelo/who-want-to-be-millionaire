@@ -12,7 +12,6 @@ const GameMainPage = () => {
   const [finalScore, setFinalWinScore] = useState('');
   const [fetchedData, setFetchedData] = useState({});
   const [isGameWin, setIsGameWin] = useState(false);
-  const [answerButtonStyle, setAnswerButtonStyle] = useState('');
 
   useEffect(() => {
     const loadScoresList = async () => {
@@ -35,12 +34,6 @@ const GameMainPage = () => {
   const handleAnswerClick = (isCorrect, id, winScore) => {
     const lastQuestionId = 11;
 
-    if (isCorrect) {
-      setAnswerButtonStyle('right');
-    } else {
-      setAnswerButtonStyle('wrong');
-    }
-
     setTimeout(() => {
       if (id === lastQuestionId && isCorrect) {
         setIsGameWin(true);
@@ -54,7 +47,7 @@ const GameMainPage = () => {
       if (isCorrect) {
         setQuestionNumber(((prevState) => prevState + 1));
       }
-    }, 3000);
+    }, 2000);
   };
 
   if (isGameOver) {
@@ -81,7 +74,7 @@ const GameMainPage = () => {
         id={fetchedData.id}
         winScore={fetchedData.winScore}
         handleAnswerClick={handleAnswerClick}
-        answerButtonStyle={answerButtonStyle}
+        questionNumber={questionNumber}
       />
       <ScoreBlock data={scoresList} questionNumber={questionNumber} />
     </div>

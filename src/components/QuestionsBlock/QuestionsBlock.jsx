@@ -1,13 +1,21 @@
 /* eslint-disable jsx-a11y/interactive-supports-focus,jsx-a11y/click-events-have-key-events */
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './QuestionsBlock.scss';
-
-const classNames = require('classnames');
+import AnswerItem from '../AnswerItem/AnswerItem';
 
 const QuestionsBlock = ({
-  question, answers, id, winScore, handleAnswerClick, answerButtonStyle,
+  question, answers, id, winScore, handleAnswerClick, questionNumber,
 }) => {
-  console.log('ljk');
+  const [activeButton, setActiveButton] = useState('');
+
+  useEffect(() => {
+    setActiveButton('');
+  }, [questionNumber]);
+
+  const handleAnswerClickStyle = (number) => {
+    setActiveButton(number);
+  };
+
   return (
     <div className="questionsBlock">
       <div className="questionsContainer">
@@ -15,29 +23,19 @@ const QuestionsBlock = ({
         <div className="questionsContainer_answersList">
           {answers && answers.map(({
             value, number, isCorrect,
-          }) => {
-            const scoreItemStyle = classNames('answerItem', answerButtonStyle);
-            return (
-              <div
-                role="button"
-                className={scoreItemStyle}
-                key={value}
-                onClick={() => handleAnswerClick(isCorrect, id, winScore)}
-              >
-                <div className="answerItem_value">
-                  <span className="answerItem_valueNum">{number}</span>
-                  {value}
-                </div>
-                <div>
-                  <svg className="answerItem_icon" viewBox="0 0 421 72" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M404 36L421 36" />
-                    <path d="M0 36L17 36" />
-                    <path d="M49.012 0.5H371.988C375.607 0.5 379.014 2.2033 381.186 5.09773L404.375 36L381.186 66.9023C379.014 69.7967 375.607 71.5 371.988 71.5H49.012C45.3933 71.5 41.9857 69.7967 39.8137 66.9023L16.6251 36L39.8137 5.09773C41.9857 2.2033 45.3933 0.5 49.012 0.5Z" />
-                  </svg>
-                </div>
-              </div>
-            );
-          })}
+          }) => (
+            <AnswerItem
+              key={value}
+              value={value}
+              number={number}
+              isCorrect={isCorrect}
+              id={id}
+              winScore={winScore}
+              handleAnswerClick={handleAnswerClick}
+              handleAnswerClickStyle={handleAnswerClickStyle}
+              activeButton={activeButton}
+            />
+          ))}
         </div>
       </div>
     </div>
