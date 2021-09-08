@@ -29,6 +29,14 @@ button {
   line-height: 116%;
 
   transition: background-color 0.5s;
+
+  @media (max-width: 768px) {
+    padding: 10px;
+    font-size: 14px;
+    max-width: 288px;
+    max-height: 48px;
+    border-radius: 8px;
+  }
 }
 
 button:hover {

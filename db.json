@@ -20,22 +20,22 @@
       "question": "What sort of animal is Walt Disney's Dumbo?",
       "answers": [
         {
-          "number": "A",
+          "letter": "A",
           "value": "Deer",
           "isCorrect": false
         },
         {
-          "number": "B",
+          "letter": "B",
           "value": "Rabbit",
           "isCorrect": false
         },
         {
-          "number": "C",
+          "letter": "C",
           "value": "Elephant",
           "isCorrect": true
         },
         {
-          "number": "D",
+          "letter": "D",
           "value": "Donkey",
           "isCorrect": false
         }
@@ -47,22 +47,22 @@
       "question": "A person with well-developed abdominal muscles is said to have a what?",
       "answers": [
         {
-          "number": "A",
+          "letter": "A",
           "value": "One-pack",
           "isCorrect": false
         },
         {
-          "number": "B",
+          "letter": "B",
           "value": "Six-pack",
           "isCorrect": true
         },
         {
-          "number": "C",
+          "letter": "C",
           "value": "12-pack",
           "isCorrect": false
         },
         {
-          "number": "D",
+          "letter": "D",
           "value": "Family-pack",
           "isCorrect": false
         }
@@ -74,22 +74,22 @@
       "question": "Which of these names is not in the title of a Shakespeare play?",
       "answers": [
         {
-          "number": "A",
+          "letter": "A",
           "value": "Hamlet",
           "isCorrect": false
         },
         {
-          "number": "B",
+          "letter": "B",
           "value": "Romeo",
           "isCorrect": false
         },
         {
-          "number": "C",
+          "letter": "C",
           "value": "Macbeth",
           "isCorrect": false
         },
         {
-          "number": "D",
+          "letter": "D",
           "value": "Darren",
           "isCorrect": true
         }
@@ -101,22 +101,22 @@
       "question": "The hammer and sickle is one of the most recognisable symbols of which political ideology?",
       "answers": [
         {
-          "number": "A",
+          "letter": "A",
           "value": "Republicanism",
           "isCorrect": false
         },
         {
-          "number": "B",
+          "letter": "B",
           "value": "Communism",
           "isCorrect": true
         },
         {
-          "number": "C",
+          "letter": "C",
           "value": "Conservatism",
           "isCorrect": false
         },
         {
-          "number": "D",
+          "letter": "D",
           "value": "Liberalism",
           "isCorrect": false
         }
@@ -128,22 +128,22 @@
       "question": "In the United States, what is traditionally the proper way to address a judge?",
       "answers": [
         {
-          "number": "A",
+          "letter": "A",
           "value": "Your holiness",
           "isCorrect": false
         },
         {
-          "number": "B",
+          "letter": "B",
           "value": "Your honor",
           "isCorrect": true
         },
         {
-          "number": "C",
+          "letter": "C",
           "value": "Your eminence",
           "isCorrect": false
         },
         {
-          "number": "D",
+          "letter": "D",
           "value": "You da man!",
           "isCorrect": false
         }
@@ -155,22 +155,22 @@
       "question": "What was the name Institute of magic in the book \"Monday Begins on Saturday\"?",
       "answers": [
         {
-          "number": "A",
+          "letter": "A",
           "value": "NUDA",
           "isCorrect": false
         },
         {
-          "number": "B",
+          "letter": "B",
           "value": "NUINU",
           "isCorrect": false
         },
         {
-          "number": "C",
+          "letter": "C",
           "value": "NIICHAVO",
           "isCorrect": true
         },
         {
-          "number": "D",
+          "letter": "D",
           "value": "NIITAVO",
           "isCorrect": false
         }
@@ -182,22 +182,22 @@
       "winScore": "$16,000",
       "answers": [
         {
-          "number": "A",
+          "letter": "A",
           "value": "Snapchat and Grubhub",
           "isCorrect": false
         },
         {
-          "number": "B",
+          "letter": "B",
           "value": "Whatsapp and SHAREit",
           "isCorrect": false
         },
         {
-          "number": "C",
+          "letter": "C",
           "value": "TikTok and Spotify",
           "isCorrect": false
         },
         {
-          "number": "D",
+          "letter": "D",
           "value": "Lyft and Uber",
           "isCorrect": true
         }
@@ -209,22 +209,22 @@
       "question": "According to the Highway Code, what shape is the standard sign giving the order to ‘Stop’?",
       "answers": [
         {
-          "number": "A",
+          "letter": "A",
           "value": "Pentagon",
           "isCorrect": false
         },
         {
-          "number": "B",
+          "letter": "B",
           "value": "Hexagon",
           "isCorrect": false
         },
         {
-          "number": "C",
+          "letter": "C",
           "value": "Heptagon",
           "isCorrect": false
         },
         {
-          "number": "D",
+          "letter": "D",
           "value": "Octagon",
           "isCorrect": true
         }
@@ -236,22 +236,22 @@
       "question": "The national flag of which of these countries does not feature three horizontal stripes?",
       "answers": [
         {
-          "number": "A",
+          "letter": "A",
           "value": "Russia",
           "isCorrect": false
         },
         {
-          "number": "B",
+          "letter": "B",
           "value": "Romania",
           "isCorrect": true
         },
         {
-          "number": "C",
+          "letter": "C",
           "value": "Hungary",
           "isCorrect": false
         },
         {
-          "number": "D",
+          "letter": "D",
           "value": "Germany",
           "isCorrect": false
         }
@@ -263,22 +263,22 @@
       "question": "The words ‘Royal Dutch’ appear in the full name of which company?",
       "answers": [
         {
-          "number": "A",
+          "letter": "A",
           "value": "Esso",
           "isCorrect": false
         },
         {
-          "number": "B",
+          "letter": "B",
           "value": "Shell",
           "isCorrect": true
         },
         {
-          "number": "C",
+          "letter": "C",
           "value": "BP",
           "isCorrect": false
         },
         {
-          "number": "D",
+          "letter": "D",
           "value": "Texaco",
           "isCorrect": false
         }
@@ -290,22 +290,22 @@
       "question": "In the ‘Transformers’ film franchise, who is the leader of the Decepticons?",
       "answers": [
         {
-          "number": "A",
+          "letter": "A",
           "value": "Megaphone",
           "isCorrect": false
         },
         {
-          "number": "B",
+          "letter": "B",
           "value": "Megabyte",
           "isCorrect": false
         },
         {
-          "number": "C",
+          "letter": "C",
           "value": "Megatron",
           "isCorrect": true
         },
         {
-          "number": "D",
+          "letter": "D",
           "value": "Megabus",
           "isCorrect": false
         }
@@ -317,22 +317,22 @@
       "question": "The name of which European capital city means ‘Bay of Smokes’ in its native language?",
       "answers": [
         {
-          "number": "A",
+          "letter": "A",
           "value": "Copenhagen",
           "isCorrect": false
         },
         {
-          "number": "B",
+          "letter": "B",
           "value": "Amsterdam",
           "isCorrect": false
         },
         {
-          "number": "C",
+          "letter": "C",
           "value": "Reykjavik",
           "isCorrect": true
         },
         {
-          "number": "D",
+          "letter": "D",
           "value": "Vilnius",
           "isCorrect": false
         }

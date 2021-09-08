@@ -1,5 +1,5 @@
-/* eslint-disable jsx-a11y/interactive-supports-focus,jsx-a11y/click-events-have-key-events */
-import React, { useEffect } from 'react';
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+import React from 'react';
 import './AnswerItem.scss';
 
 const classNames = require('classnames');
@@ -10,32 +10,34 @@ const AnswerItem = ({
   handleAnswerClick,
   value,
   isCorrect,
-  number,
+  letter,
   handleAnswerClickStyle,
   activeButton,
+  disabledButton,
 }) => {
   let active = '';
 
-  if (activeButton === number && isCorrect) {
+  if (activeButton === letter && isCorrect) {
     active = 'right';
   }
 
-  if (activeButton === number && !isCorrect) {
+  if (activeButton === letter && !isCorrect) {
     active = 'wrong';
   }
 
-  const answerItemStyle = classNames('answerItem', active);
+  const answerItemStyle = classNames('answerItem', active, disabledButton);
   return (
     <div
       role="button"
+      tabIndex="0"
       className={answerItemStyle}
       onClick={() => {
         handleAnswerClick(isCorrect, id, winScore, value);
-        handleAnswerClickStyle(number);
+        handleAnswerClickStyle(letter);
       }}
     >
       <div className="answerItem_value">
-        <span className="answerItem_valueNum">{number}</span>
+        <span className="answerItem_valueNum">{letter}</span>
         {value}
       </div>
       <div>

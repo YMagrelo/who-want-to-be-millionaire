@@ -13,9 +13,17 @@
     display: block;
     max-width: 300px;
     margin-bottom: 30px;
+
+    @media (max-width: 1100px) {
+      max-width: 200px;
+    }
   }
 
   &_title {
     max-width: 450px;
+
+    @media (max-width: 768px) {
+      font-size: 32px;
+    }
   }
 }

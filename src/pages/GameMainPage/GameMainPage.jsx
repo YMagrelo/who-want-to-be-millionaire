@@ -5,6 +5,8 @@ import QuestionsBlock from '../../components/QuestionsBlock/QuestionsBlock';
 import GameOverPage from '../GameOverPage/GameOverPage';
 import WinGamePage from '../WinGamePage/WinGamePage';
 
+const classNames = require('classnames');
+
 const GameMainPage = () => {
   const [questionNumber, setQuestionNumber] = useState(0);
   const [scoresList, setScoresList] = useState([]);
@@ -12,6 +14,10 @@ const GameMainPage = () => {
   const [finalScore, setFinalWinScore] = useState('');
   const [fetchedData, setFetchedData] = useState({});
   const [isGameWin, setIsGameWin] = useState(false);
+  const [hideQuestionsBlock, setHideQuestionsBlock] = useState('');
+  const [showScoreBlock, setShowBlock] = useState('');
+  const questionsBlockStyle = classNames('questionsBlock', hideQuestionsBlock);
+  const scoreBlockStyle = classNames('scoreBlock', showScoreBlock);
 
   useEffect(() => {
     const loadScoresList = async () => {
@@ -19,6 +25,7 @@ const GameMainPage = () => {
       const data = await response.json();
       setScoresList(data);
     };
+
     loadScoresList();
   }, []);
 
@@ -28,6 +35,7 @@ const GameMainPage = () => {
       const data = await response.json();
       setFetchedData(data[questionNumber]);
     };
+
     loadQuestionsAndAnswers();
   }, [questionNumber]);
 
@@ -47,7 +55,17 @@ const GameMainPage = () => {
       if (isCorrect) {
         setQuestionNumber(((prevState) => prevState + 1));
       }
-    }, 2000);
+    }, 1000);
+  };
+
+  const handleBurgerClick = () => {
+    setHideQuestionsBlock('disabled');
+    setShowBlock('enabled');
+  };
+
+  const handleCloseClick = () => {
+    setHideQuestionsBlock('');
+    setShowBlock('');
   };
 
   if (isGameOver) {
@@ -69,6 +87,8 @@ const GameMainPage = () => {
   return (
     <div className="mainPageContainer">
       <QuestionsBlock
+        handleBurgerClick={handleBurgerClick}
+        questionsBlockStyle={questionsBlockStyle}
         question={fetchedData.question}
         answers={fetchedData.answers}
         id={fetchedData.id}
@@ -76,7 +96,12 @@ const GameMainPage = () => {
         handleAnswerClick={handleAnswerClick}
         questionNumber={questionNumber}
       />
-      <ScoreBlock data={scoresList} questionNumber={questionNumber} />
+      <ScoreBlock
+        data={scoresList}
+        questionNumber={questionNumber}
+        scoreBlockStyle={scoreBlockStyle}
+        handleCloseClick={handleCloseClick}
+      />
     </div>
   );
 };
