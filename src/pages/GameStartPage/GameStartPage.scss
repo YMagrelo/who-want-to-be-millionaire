@@ -1,6 +1,7 @@
 .startPageContainer {
   height: 100vh;
   display: flex;
+  min-height: 500px;
   align-items: center;
   justify-content: center;
   background: linear-gradient(to right bottom, #ffffff 50%, #FFF3EB 50%);

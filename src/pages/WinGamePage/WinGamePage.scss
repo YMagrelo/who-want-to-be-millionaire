@@ -1,6 +1,7 @@
 .winPageContainer {
   height: 100vh;
   display: flex;
+  min-height: 500px;
   padding: 0 10px;
   flex-direction: column;
   align-items: center;

@@ -11,8 +11,8 @@
   }
 
   @media (max-width: 424px) {
-    display: none;
     width: 100%;
+    display: none;
     background: #F5F5F7;
   }
 
@@ -25,9 +25,11 @@
 }
 
 .scoreBlock.enabled {
-display: flex;
+  display: flex;
+
   @media (max-width: 424px) {
     display: flex;
+    overflow-x: scroll;
   }
 }
 
@@ -39,8 +41,8 @@ display: flex;
 
   @media (max-width: 424px) {
     padding: 0;
-    max-height: 38px;
     margin-bottom: 12px;
+    max-height: 38px;
   }
 
   @media (max-width: 359px) {
