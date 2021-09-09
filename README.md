@@ -1,5 +1,3 @@
-[DEMO LINK](https://who-want-to-be-millionaire.herokuapp.com/main)
-
 git clone https://github.com/YMagrelo/who-want-to-be-millionaire.git
 
 yarn install
