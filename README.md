@@ -2,6 +2,8 @@
 
 git clone https://github.com/YMagrelo/who-want-to-be-millionaire.git
 
+checkout to master branch
+
 yarn install
 
 yarn serve
