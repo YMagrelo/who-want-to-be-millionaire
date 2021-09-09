@@ -21,7 +21,7 @@ const GameMainPage = () => {
 
   useEffect(() => {
     const loadScoresList = async () => {
-      const response = await fetch('http://localhost:4200/scoresList');
+      const response = await fetch('http://localhost:8000/scoresList');
       const data = await response.json();
       setScoresList(data);
     };
@@ -31,7 +31,7 @@ const GameMainPage = () => {
 
   useEffect(() => {
     const loadQuestionsAndAnswers = async () => {
-      const response = await fetch('http://localhost:4200/questionsAndAnswers');
+      const response = await fetch('http://localhost:8000/questionsAndAnswers');
       const data = await response.json();
       setFetchedData(data[questionNumber]);
     };
