@@ -24,6 +24,7 @@
     "no-trailing-spaces": 1,
     "react/jsx-tag-spacing": 1,
     "quotes": 1,
-    "consistent-return": 0
+    "consistent-return": 0,
+    "import/prefer-default-export": 0
   }
 }

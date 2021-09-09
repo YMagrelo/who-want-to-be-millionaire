@@ -4,6 +4,7 @@ import ScoreBlock from '../../components/ScoreBlock/ScoreBlock';
 import QuestionsBlock from '../../components/QuestionsBlock/QuestionsBlock';
 import GameOverPage from '../GameOverPage/GameOverPage';
 import WinGamePage from '../WinGamePage/WinGamePage';
+import { JSON_API } from "../../helpers/constants";
 
 const classNames = require('classnames');
 
@@ -21,7 +22,7 @@ const GameMainPage = () => {
 
   useEffect(() => {
     const loadScoresList = async () => {
-      const response = await fetch('http://localhost:8000/scoresList');
+      const response = await fetch(`${JSON_API}/scoresList`);
       const data = await response.json();
       setScoresList(data);
     };
@@ -31,7 +32,7 @@ const GameMainPage = () => {
 
   useEffect(() => {
     const loadQuestionsAndAnswers = async () => {
-      const response = await fetch('http://localhost:8000/questionsAndAnswers');
+      const response = await fetch(`${JSON_API}/questionsAndAnswers`);
       const data = await response.json();
       setFetchedData(data[questionNumber]);
     };
